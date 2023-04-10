@@ -2,6 +2,7 @@ import { useArray } from './useArray';
 import { useArrayIndex } from './useArrayIndex';
 import { useBoolean } from './useBoolean';
 import { useColor } from './useColor';
+import { useCounter } from './useCounter';
 import { useEnum } from './useEnum';
 import { useInteger } from './useInteger';
 import { useObject } from './useObject';
@@ -18,6 +19,7 @@ const Awesome = {
 	useArrayIndex,
 	useBoolean,
 	useColor,
+	useCounter,
 	useEnum,
 	useInteger,
 	useObject,
