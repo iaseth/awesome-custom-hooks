@@ -28,6 +28,7 @@ def generate_readme(hooks):
 	HOOK_LIST_MD = ""
 	for hook in hooks:
 		HOOK_LIST_MD += f"* `{hook.name}`\n"
+		HOOK_LIST_MD += f"\t- [{hook.fullpath}](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/{hook.entry}.ts)\n"
 
 	preadme_text = open("PREADME.md").read()
 	readme_text = preadme_text.replace("[[HOOK_LIST_MD]]", HOOK_LIST_MD)
