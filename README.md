@@ -132,6 +132,10 @@
 
 	- [src/events/useSetInterval.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetInterval.ts)
 	- `return 0;`
+* `useSetTimeout`
+
+	- [src/events/useSetTimeout.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetTimeout.ts)
+	- `return 0;`
 
 
 

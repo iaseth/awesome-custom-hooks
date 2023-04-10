@@ -44,3 +44,4 @@ events/useAddEventListener
 events/useEvent
 events/useWindowEvent
 events/useSetInterval
+events/useSetTimeout

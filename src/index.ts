@@ -31,6 +31,7 @@ import { useAddEventListener } from './events/useAddEventListener';
 import { useEvent } from './events/useEvent';
 import { useWindowEvent } from './events/useWindowEvent';
 import { useSetInterval } from './events/useSetInterval';
+import { useSetTimeout } from './events/useSetTimeout';
 
 
 
@@ -68,6 +69,7 @@ const Awesome = {
 	useEvent,
 	useWindowEvent,
 	useSetInterval,
+	useSetTimeout,
 };
 
 export default Awesome;

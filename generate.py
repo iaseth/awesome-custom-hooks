@@ -16,8 +16,7 @@ class CustomHook:
 		filetext = open(self.fullpath).read()
 		filelines = [x.strip() for x in filetext.split("\n")]
 		return_statements = [x for x in filelines if x.startswith("return ")]
-		return_statements.append("Not found")
-		return return_statements[0]
+		return return_statements[-1] if len(return_statements) > 0 else "Not found"
 
 
 	def __str__(self):
