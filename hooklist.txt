@@ -2,6 +2,7 @@
 useBoolean
 useToggle
 useVisibility
+useHidden
 
 useCounter
 useDigit

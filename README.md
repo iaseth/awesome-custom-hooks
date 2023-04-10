@@ -3,6 +3,7 @@
 * `useBoolean`
 * `useToggle`
 * `useVisibility`
+* `useHidden`
 * `useCounter`
 * `useDigit`
 * `useNumber`

@@ -1,6 +1,7 @@
 import { useBoolean } from './useBoolean';
 import { useToggle } from './useToggle';
 import { useVisibility } from './useVisibility';
+import { useHidden } from './useHidden';
 import { useCounter } from './useCounter';
 import { useDigit } from './useDigit';
 import { useNumber } from './useNumber';
@@ -31,6 +32,7 @@ const Awesome = {
 	useBoolean,
 	useToggle,
 	useVisibility,
+	useHidden,
 	useCounter,
 	useDigit,
 	useNumber,
