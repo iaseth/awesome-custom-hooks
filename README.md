@@ -31,11 +31,11 @@
 * `useInteger`
 
 	- [src/numbers/useInteger.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useInteger.ts)
-	- `return 0;`
+	- `return [integer, setIntegerSafe];`
 * `usePercent`
 
 	- [src/numbers/usePercent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/usePercent.ts)
-	- `return 0;`
+	- `return [percent, setPercentSafe];`
 * `useRandom`
 
 	- [src/numbers/useRandom.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useRandom.ts)
@@ -43,7 +43,7 @@
 * `useDegree`
 
 	- [src/numbers/useDegree.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useDegree.ts)
-	- `return 0;`
+	- `return [degree, setDegreeSafe];`
 * `useTime`
 
 	- [src/datetime/useTime.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/datetime/useTime.ts)

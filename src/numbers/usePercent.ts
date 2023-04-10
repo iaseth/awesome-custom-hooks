@@ -2,6 +2,16 @@ import React from 'react';
 
 
 
-export const usePercent = () => {
-	return 0;
+const MAX_PERCENT: number = 100;
+
+export const usePercent = (intialState: number = 0) => {
+	const [percent, setPercent] = React.useState(intialState);
+
+	const setPercentSafe = (pc: number) => {
+		if (pc >= 0 && pc <= MAX_PERCENT) {
+			setPercent(pc);
+		}
+	};
+
+	return [percent, setPercentSafe];
 };
