@@ -1,6 +1,6 @@
 {
   "name": "awesome-custom-hooks",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Awesome custom React Hooks that I frequently use.",
   "main": "src/index.js",
   "type": "module",
@@ -12,7 +12,8 @@
     "hooks",
     "javascript"
   ],
-  "author": "",
+  "author": "iaseth",
+  "repository": "iaseth/awesome-custom-hooks",
   "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
