@@ -4,6 +4,8 @@ useToggle
 useVisibility
 
 useCounter
+useDigit
+useNumber
 useInteger
 usePercent
 useRandom
