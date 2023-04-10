@@ -34,6 +34,25 @@ def create_modules():
 				print(f"Created: {filepath}")
 
 
+def generate_index_ts():
+	hook_names = get_hook_names()
+	text = ""
+	for hook_name in hook_names:
+		text += f"import {{ {hook_name} }} from './{hook_name}';\n"
+
+	text += "\n\n\n"
+	text += "const Awesome = {\n"
+	for hook_name in hook_names:
+		text += f"\t{hook_name},\n"
+	text += "};\n\n"
+	text += "export default Awesome;\n"
+
+	INDEX_TS_PATH = "src/index.ts"
+	with open(INDEX_TS_PATH, "w") as f:
+		f.write(text)
+		print(f"saved: {INDEX_TS_PATH}")
+
+
 def main():
 	args = sys.argv[1:]
 	command = None if len(args) == 0 else args[0].lower()
@@ -42,6 +61,8 @@ def main():
 		generate_readme()
 	elif command == "create":
 		create_modules()
+	elif command == "ts":
+		generate_index_ts()
 	else:
 		print("No command provided.")
 

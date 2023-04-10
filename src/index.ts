@@ -1,33 +1,59 @@
-import { useArray } from './useArray';
-import { useArrayIndex } from './useArrayIndex';
 import { useBoolean } from './useBoolean';
-import { useColor } from './useColor';
-import { useCounter } from './useCounter';
-import { useEnum } from './useEnum';
-import { useInteger } from './useInteger';
-import { useObject } from './useObject';
-import { useString } from './useString';
-import { useText } from './useText';
-import { useTable } from './useTable';
 import { useToggle } from './useToggle';
 import { useVisibility } from './useVisibility';
+import { useCounter } from './useCounter';
+import { useDigit } from './useDigit';
+import { useNumber } from './useNumber';
+import { useInteger } from './useInteger';
+import { usePercent } from './usePercent';
+import { useRandom } from './useRandom';
+import { useDate } from './useDate';
+import { useDayOfMonth } from './useDayOfMonth';
+import { useDayOfWeek } from './useDayOfWeek';
+import { useMonth } from './useMonth';
+import { useYear } from './useYear';
+import { useString } from './useString';
+import { useText } from './useText';
+import { useArray } from './useArray';
+import { useArrayIndex } from './useArrayIndex';
+import { useEnum } from './useEnum';
+import { useObject } from './useObject';
+import { useTable } from './useTable';
+import { useColor } from './useColor';
+import { useAddEventListener } from './useAddEventListener';
+import { useEvent } from './useEvent';
+import { useWindowEvent } from './useWindowEvent';
+import { useSetInterval } from './useSetInterval';
 
 
 
 const Awesome = {
-	useArray,
-	useArrayIndex,
 	useBoolean,
-	useColor,
-	useCounter,
-	useEnum,
-	useInteger,
-	useObject,
-	useString,
-	useText,
-	useTable,
 	useToggle,
 	useVisibility,
-}
+	useCounter,
+	useDigit,
+	useNumber,
+	useInteger,
+	usePercent,
+	useRandom,
+	useDate,
+	useDayOfMonth,
+	useDayOfWeek,
+	useMonth,
+	useYear,
+	useString,
+	useText,
+	useArray,
+	useArrayIndex,
+	useEnum,
+	useObject,
+	useTable,
+	useColor,
+	useAddEventListener,
+	useEvent,
+	useWindowEvent,
+	useSetInterval,
+};
 
 export default Awesome;

@@ -4,6 +4,8 @@
 * `useToggle`
 * `useVisibility`
 * `useCounter`
+* `useDigit`
+* `useNumber`
 * `useInteger`
 * `usePercent`
 * `useRandom`
@@ -20,7 +22,6 @@
 * `useObject`
 * `useTable`
 * `useColor`
-* `useAddEventListener`
 * `useAddEventListener`
 * `useEvent`
 * `useWindowEvent`
