@@ -5,7 +5,13 @@
 * `useVisibility`
 * `useCounter`
 * `useInteger`
+* `usePercent`
 * `useRandom`
+* `useDate`
+* `useDayOfMonth`
+* `useDayOfWeek`
+* `useMonth`
+* `useYear`
 * `useString`
 * `useText`
 * `useArray`
@@ -14,6 +20,11 @@
 * `useObject`
 * `useTable`
 * `useColor`
+* `useAddEventListener`
+* `useAddEventListener`
+* `useEvent`
+* `useWindowEvent`
+* `useSetInterval`
 
 
 

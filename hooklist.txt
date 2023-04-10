@@ -5,7 +5,14 @@ useVisibility
 
 useCounter
 useInteger
+usePercent
 useRandom
+
+useDate
+useDayOfMonth
+useDayOfWeek
+useMonth
+useYear
 
 useString
 useText
@@ -19,3 +26,10 @@ useObject
 useTable
 
 useColor
+
+useAddEventListener
+
+useAddEventListener
+useEvent
+useWindowEvent
+useSetInterval
