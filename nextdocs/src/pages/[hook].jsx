@@ -1,3 +1,4 @@
+import Link from 'next/link';
 
 import hooksJson from '../../../hooks.min.json';
 const {hooks} = hooksJson;
@@ -31,10 +32,11 @@ export default function HookPage ({hook}) {
 
 	return (
 		<article>
-			<header className="bg-zinc-800 text-white px-4 py-20 text-center">
-				<h2 className="text-4xl font-bold">{hook.name}</h2>
+			<header className="min-h-screen bg-zinc-800 flex text-white px-4 py-20 text-center">
+				<Link className="m-auto" href="/">
+					<h2 className="text-4xl font-bold">{hook.name}</h2>
+				</Link>
 			</header>
-			<h2>{hook.filename}</h2>
 		</article>
 	);
 }
