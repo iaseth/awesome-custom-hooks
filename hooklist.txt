@@ -43,5 +43,9 @@ fetch/useFetchXML
 events/useAddEventListener
 events/useEvent
 events/useWindowEvent
+
+events/useKeyDownEvent
+events/useWheelEvent
+
 events/useSetInterval
 events/useSetTimeout

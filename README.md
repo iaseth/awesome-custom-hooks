@@ -128,6 +128,14 @@
 
 	- [src/events/useWindowEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWindowEvent.ts)
 	- `return 0;`
+* `useKeyDownEvent`
+
+	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)
+	- `return 0;`
+* `useWheelEvent`
+
+	- [src/events/useWheelEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWheelEvent.ts)
+	- `return 0;`
 * `useSetInterval`
 
 	- [src/events/useSetInterval.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetInterval.ts)

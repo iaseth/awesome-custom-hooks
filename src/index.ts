@@ -30,6 +30,8 @@ import { useFetchXML } from './fetch/useFetchXML';
 import { useAddEventListener } from './events/useAddEventListener';
 import { useEvent } from './events/useEvent';
 import { useWindowEvent } from './events/useWindowEvent';
+import { useKeyDownEvent } from './events/useKeyDownEvent';
+import { useWheelEvent } from './events/useWheelEvent';
 import { useSetInterval } from './events/useSetInterval';
 import { useSetTimeout } from './events/useSetTimeout';
 
@@ -68,6 +70,8 @@ const Awesome = {
 	useAddEventListener,
 	useEvent,
 	useWindowEvent,
+	useKeyDownEvent,
+	useWheelEvent,
 	useSetInterval,
 	useSetTimeout,
 };
