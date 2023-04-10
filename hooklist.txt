@@ -27,12 +27,12 @@ strings/useText
 arrays/useArray
 arrays/useArrayIndex
 
-useEnum
 objects/useObject
 
-useTable
+misc/useEnum
+misc/useTable
 
-useColor
+css/useColor
 
 
 

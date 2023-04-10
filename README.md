@@ -88,21 +88,21 @@
 
 	- [src/arrays/useArrayIndex.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/arrays/useArrayIndex.ts)
 	- `return 0;`
-* `useEnum`
-
-	- [src/useEnum.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/useEnum.ts)
-	- `return 0;`
 * `useObject`
 
 	- [src/objects/useObject.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/objects/useObject.ts)
 	- `return 0;`
+* `useEnum`
+
+	- [src/misc/useEnum.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/misc/useEnum.ts)
+	- `return 0;`
 * `useTable`
 
-	- [src/useTable.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/useTable.ts)
+	- [src/misc/useTable.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/misc/useTable.ts)
 	- `return 0;`
 * `useColor`
 
-	- [src/useColor.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/useColor.ts)
+	- [src/css/useColor.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/css/useColor.ts)
 	- `return 0;`
 * `useFetch`
 

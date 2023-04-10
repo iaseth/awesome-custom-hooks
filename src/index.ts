@@ -20,10 +20,10 @@ import { useString } from './strings/useString';
 import { useText } from './strings/useText';
 import { useArray } from './arrays/useArray';
 import { useArrayIndex } from './arrays/useArrayIndex';
-import { useEnum } from './useEnum';
 import { useObject } from './objects/useObject';
-import { useTable } from './useTable';
-import { useColor } from './useColor';
+import { useEnum } from './misc/useEnum';
+import { useTable } from './misc/useTable';
+import { useColor } from './css/useColor';
 import { useFetch } from './fetch/useFetch';
 import { useFetchJSON } from './fetch/useFetchJSON';
 import { useFetchXML } from './fetch/useFetchXML';
@@ -57,8 +57,8 @@ const Awesome = {
 	useText,
 	useArray,
 	useArrayIndex,
-	useEnum,
 	useObject,
+	useEnum,
 	useTable,
 	useColor,
 	useFetch,
