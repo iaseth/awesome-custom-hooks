@@ -10,7 +10,10 @@
 * `useInteger`
 * `usePercent`
 * `useRandom`
+* `useDegree`
+* `useTime`
 * `useDate`
+* `useDateTime`
 * `useDayOfMonth`
 * `useDayOfWeek`
 * `useMonth`
@@ -23,6 +26,9 @@
 * `useObject`
 * `useTable`
 * `useColor`
+* `useFetch`
+* `useFetchJSON`
+* `useFetchXML`
 * `useAddEventListener`
 * `useEvent`
 * `useWindowEvent`
