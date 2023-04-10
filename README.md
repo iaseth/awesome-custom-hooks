@@ -1,18 +1,19 @@
 
 # awesome-custom-hooks
-* `useArray`
-* `useArrayIndex`
 * `useBoolean`
-* `useColor`
-
-* `useEnum`
-* `useInteger`
-* `useObject`
-* `useString`
-
-* `useText`
-* `useTable`
 * `useToggle`
 * `useVisibility`
+* `useCounter`
+* `useInteger`
+* `useRandom`
+* `useString`
+* `useText`
+* `useArray`
+* `useArrayIndex`
+* `useEnum`
+* `useObject`
+* `useTable`
+* `useColor`
+
 
 
