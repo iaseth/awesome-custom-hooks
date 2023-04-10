@@ -5,3 +5,8 @@ export function useToggle (intialState=false) {
 	const toggleX = () => setX(x => !x);
 	return [x, toggleX];
 }
+
+const Awesome = {
+	useToggle
+};
+export default Awesome;
