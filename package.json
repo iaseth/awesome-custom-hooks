@@ -1,12 +1,21 @@
 {
   "name": "awesome-custom-hooks",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Awesome custom React Hooks that I frequently use.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react", "hooks", "javascript"],
+  "keywords": [
+    "react",
+    "hooks",
+    "javascript"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
