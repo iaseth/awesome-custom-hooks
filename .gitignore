@@ -3,3 +3,6 @@ node_modules/
 dist/
 
 *.min.json
+
+# Local Netlify folder
+.netlify
