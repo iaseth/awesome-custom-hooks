@@ -1,34 +1,34 @@
 
-useBoolean
-useToggle
-useVisibility
-useHidden
+booleans/useBoolean
+booleans/useToggle
+booleans/useVisibility
+booleans/useHidden
 
-useCounter
-useDigit
-useNumber
-useInteger
-usePercent
-useRandom
-useDegree
+numbers/useCounter
+numbers/useDigit
+numbers/useNumber
+numbers/useInteger
+numbers/usePercent
+numbers/useRandom
+numbers/useDegree
 
-useTime
-useDate
-useDateTime
+datetime/useTime
+datetime/useDate
+datetime/useDateTime
 
-useDayOfMonth
-useDayOfWeek
-useMonth
-useYear
+datetime/useDayOfMonth
+datetime/useDayOfWeek
+datetime/useMonth
+datetime/useYear
 
-useString
-useText
+strings/useString
+strings/useText
 
-useArray
-useArrayIndex
+arrays/useArray
+arrays/useArrayIndex
 
 useEnum
-useObject
+objects/useObject
 
 useTable
 
@@ -36,11 +36,11 @@ useColor
 
 
 
-useFetch
-useFetchJSON
-useFetchXML
+fetch/useFetch
+fetch/useFetchJSON
+fetch/useFetchXML
 
-useAddEventListener
-useEvent
-useWindowEvent
-useSetInterval
+events/useAddEventListener
+events/useEvent
+events/useWindowEvent
+events/useSetInterval

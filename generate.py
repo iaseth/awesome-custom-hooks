@@ -2,18 +2,19 @@ import os
 import sys
 
 
-def get_hook_names():
+def get_hook_paths():
 	hooklist_text = open("hooklist.txt").read()
 	hooklist_lines = [x.strip() for x in hooklist_text.split("\n")]
-	hook_names = [x for x in hooklist_lines if x]
-	return hook_names
+	hook_paths = [x for x in hooklist_lines if x]
+	return hook_paths
 
 
 def generate_readme():
-	hook_names = get_hook_names()
+	hook_paths = get_hook_paths()
 	HOOK_LIST_MD = ""
-	for hook_name in hook_names:
-		HOOK_LIST_MD += f"* `{hook_name}`\n"
+	for hook_path in hook_paths:
+		hook = hook_path.split("/")[-1]
+		HOOK_LIST_MD += f"* `{hook}`\n"
 
 	preadme_text = open("PREADME.md").read()
 	readme_text = preadme_text.replace("[[HOOK_LIST_MD]]", HOOK_LIST_MD)
@@ -23,9 +24,9 @@ def generate_readme():
 
 
 def create_modules():
-	hook_names = get_hook_names()
-	for hook_name in hook_names:
-		filepath = f"src/{hook_name}.ts"
+	hook_paths = get_hook_paths()
+	for hook_path in hook_paths:
+		filepath = f"src/{hook_path}.ts"
 		if os.path.isfile(filepath):
 			print(f"Exists: {filepath}")
 		else:
@@ -35,15 +36,18 @@ def create_modules():
 
 
 def generate_index_ts():
-	hook_names = get_hook_names()
+	hook_paths = get_hook_paths()
 	text = ""
-	for hook_name in hook_names:
-		text += f"import {{ {hook_name} }} from './{hook_name}';\n"
+	for hook_path in hook_paths:
+		hook_name = hook_path.split("/")[-1]
+		text += f"import {{ {hook_name} }} from './{hook_path}';\n"
 
 	text += "\n\n\n"
 	text += "const Awesome = {\n"
-	for hook_name in hook_names:
+	for hook_path in hook_paths:
+		hook_name = hook_path.split("/")[-1]
 		text += f"\t{hook_name},\n"
+
 	text += "};\n\n"
 	text += "export default Awesome;\n"
 
