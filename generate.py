@@ -1,3 +1,4 @@
+import os
 import sys
 
 
@@ -21,12 +22,26 @@ def generate_readme():
 		print(f"saved: README.md")
 
 
+def create_modules():
+	hook_names = get_hook_names()
+	for hook_name in hook_names:
+		filepath = f"src/{hook_name}.ts"
+		if os.path.isfile(filepath):
+			print(f"Exists: {filepath}")
+		else:
+			with open(filepath, "w") as f:
+				f.write("")
+				print(f"Created: {filepath}")
+
+
 def main():
 	args = sys.argv[1:]
 	command = None if len(args) == 0 else args[0].lower()
 
 	if command == "readme":
 		generate_readme()
+	elif command == "create":
+		create_modules()
 	else:
 		print("No command provided.")
 
