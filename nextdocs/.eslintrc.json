@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"rules": {
+		"indent": ["error", "tab"],
+		"semi": [2, "always"]
+	}
 }
