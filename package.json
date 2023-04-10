@@ -1,11 +1,12 @@
 {
   "name": "awesome-custom-hooks",
-  "version": "0.4.1",
+  "version": "0.5.1",
   "description": "Awesome custom React Hooks that I frequently use.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "react",
@@ -18,5 +19,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33"
   }
 }
