@@ -12,6 +12,14 @@ class CustomHook:
 	def print(self):
 		print(self)
 
+	def get_return_statement(self):
+		filetext = open(self.fullpath).read()
+		filelines = [x.strip() for x in filetext.split("\n")]
+		return_statements = [x for x in filelines if x.startswith("return ")]
+		return_statements.append("Not found")
+		return return_statements[0]
+
+
 	def __str__(self):
 		return f"CustomHook \"{self.name}\" ({self.fullpath})"
 
@@ -27,8 +35,10 @@ def get_hooks():
 def generate_readme(hooks):
 	HOOK_LIST_MD = ""
 	for hook in hooks:
-		HOOK_LIST_MD += f"* `{hook.name}`\n"
+		HOOK_LIST_MD += f"* `{hook.name}`\n\n"
 		HOOK_LIST_MD += f"\t- [{hook.fullpath}](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/{hook.entry}.ts)\n"
+		HOOK_LIST_MD += f"\t- `{hook.get_return_statement()}`"
+		HOOK_LIST_MD += "\n"
 
 	preadme_text = open("PREADME.md").read()
 	readme_text = preadme_text.replace("[[HOOK_LIST_MD]]", HOOK_LIST_MD)
