@@ -16,5 +16,8 @@ ts:
 create:
 	python generate.py create
 
+json:
+	python generate.py json
+
 clean:
 	@rm -rf dist

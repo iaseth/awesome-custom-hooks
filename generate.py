@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 
@@ -6,8 +7,18 @@ class CustomHook:
 	def __init__(self, entry):
 		self.entry = entry
 		self.name = entry.split("/")[-1]
+		self.filename = self.name + ".ts"
 		self.path = f"{entry}.ts"
 		self.fullpath = f"src/{entry}.ts"
+
+	def as_json_object(self):
+		jo = {}
+		jo["name"] = self.name
+		jo["entry"] = self.entry
+		jo["filename"] = self.filename
+		jo["fullpath"] = self.fullpath
+		jo["returnStatement"] = self.get_return_statement()
+		return jo
 
 	def print(self):
 		print(self)
@@ -76,6 +87,16 @@ def generate_index_ts(hooks):
 		print(f"saved: {INDEX_TS_PATH}")
 
 
+def generate_hooks_json(hooks):
+	jo = {}
+	jo["hooks"] = [hook.as_json_object() for hook in hooks]
+
+	hooks_json_path = "hooks.min.json"
+	with open(hooks_json_path, "w") as f:
+		json.dump(jo, f)
+		print(f"saved: {hooks_json_path}")
+
+
 def main():
 	hooks = get_hooks()
 
@@ -88,6 +109,8 @@ def main():
 		create_modules(hooks)
 	elif command == "ts":
 		generate_index_ts(hooks)
+	elif command == "json":
+		generate_hooks_json(hooks)
 	else:
 		print("No command provided.")
 
