@@ -4,7 +4,7 @@ import hooksJson from '../../../hooks.min.json';
 const {hooks} = hooksJson;
 
 
-export async function getStaticProps (context) {
+export async function getStaticProps (context: any) {
 	return {
 		props: {hooks}
 	};

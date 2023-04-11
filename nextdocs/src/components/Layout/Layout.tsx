@@ -5,7 +5,12 @@ import Footer from './Footer/Footer';
 
 
 
-export default function Layout ({pageProps, children}) {
+interface LayoutProps {
+	pageProps: any,
+	children: any
+};
+
+export default function Layout ({pageProps, children} : LayoutProps) {
 
 	return (
 		<>

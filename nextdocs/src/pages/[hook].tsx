@@ -4,7 +4,7 @@ import hooksJson from '../../../hooks.min.json';
 const {hooks} = hooksJson;
 
 
-export async function getStaticProps (context) {
+export async function getStaticProps (context: any) {
 	const {params} = context;
 	const hook = hooks.find(hook => hook.name.toLowerCase() === params.hook.toLowerCase());
 
@@ -28,7 +28,7 @@ export async function getStaticPaths () {
 	};
 }
 
-export default function HookPage ({pageProps}) {
+export default function HookPage ({pageProps}: {pageProps: any}) {
 	const {hook} = pageProps;
 
 	return (

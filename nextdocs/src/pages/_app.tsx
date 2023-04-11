@@ -11,7 +11,7 @@ export default function App ({ Component, pageProps }: AppProps) {
 	return (
 		<Layout {...{pageProps}}>
 			<Script src="https://www.googletagmanager.com/gtag/js?id=G-1234567890" strategy="afterInteractive" />
-			<Script strategy="afterInteractive">{`
+			<Script strategy="afterInteractive" id="googleAnalytics">{`
 				window.dataLayer = window.dataLayer || [];
 				function gtag() {dataLayer.push(arguments);};
 				if (document.location.hostname.search("awesome-custom-hooks") !== -1) {

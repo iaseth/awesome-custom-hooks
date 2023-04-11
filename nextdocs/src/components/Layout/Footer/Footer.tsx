@@ -1,7 +1,7 @@
 
 
 
-export default function Footer ({pageProps}) {
+export default function Footer ({pageProps} : {pageProps: any}) {
 	return (
 		<footer>
 			<h4>Footer</h4>

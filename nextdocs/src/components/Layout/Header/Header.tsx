@@ -1,7 +1,7 @@
 
 
 
-export default function Header ({pageProps}) {
+export default function Header ({pageProps} : {pageProps: any}) {
 	const {hook} = pageProps;
 	const title = hook ? hook.name : "Awesome";
 
