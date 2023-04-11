@@ -3,6 +3,24 @@ import os
 import sys
 
 
+def get_file_info_as_json(filepath):
+	filetext = open(filepath).read()
+	filelines = filetext.split("\n")
+	strippedlines = [x.strip() for x in filelines]
+	first_words = [x.split(" ")[0] for x in strippedlines]
+
+	fileinfo = {}
+	fileinfo["path"] = filepath
+
+	fileinfo["linesCount"] = len(filelines)
+	fileinfo["emptyLinesCount"] = strippedlines.count("")
+	fileinfo["importsCount"] = first_words.count("import")
+	fileinfo["exportsCount"] = first_words.count("export")
+	fileinfo["returnsCount"] = first_words.count("return")
+
+	return fileinfo
+
+
 class CustomHook:
 	def __init__(self, entry):
 		self.entry = entry
@@ -22,6 +40,10 @@ class CustomHook:
 		jo["srcPath"] = self.src_path
 		jo["jsPath"] = self.js_path
 		jo["dtsPath"] = self.dts_path
+
+		jo["srcFileInfo"] = get_file_info_as_json(self.src_path)
+		jo["jsFileInfo"] = get_file_info_as_json(self.js_path)
+		jo["dtsFileInfo"] = get_file_info_as_json(self.dts_path)
 
 		jo["returnStatement"] = self.get_return_statement()
 		return jo
