@@ -1,7 +1,37 @@
 import Link from 'next/link';
 
 import hooksJson from '../../../hooks.min.json';
-const {hooks} = hooksJson;
+const {hooks}: HooksJsonType = hooksJson;
+
+
+export interface HooksJsonType {
+	hooks: HookType[]
+};
+
+export interface FileInfoType {
+	emptyLinesCount: number,
+	exportsCount: number,
+	importsCount: number,
+	linesCount: number,
+	returnsCount: number,
+	path: string
+};
+
+export interface HookType {
+	entry: string,
+	filename: string,
+	name: string,
+	returnStatement: string,
+
+	dtsFileInfo: FileInfoType,
+	dtsPath: string,
+
+	jsFileInfo: FileInfoType,
+	jsPath: string,
+
+	srcFileInfo: FileInfoType,
+	srcPath: string,
+};
 
 
 export async function getStaticProps (context: any) {
