@@ -4,6 +4,13 @@ import hooksJson from '../../../hooks.min.json';
 const {hooks} = hooksJson;
 
 
+export async function getStaticProps (context) {
+	return {
+		props: {hooks}
+	};
+}
+
+
 export function HookLink ({hook}: {hook: any}) {
 	return (
 		<Link className="bg-white border border-zinc-300 rounded shadow" href={hook.name}>

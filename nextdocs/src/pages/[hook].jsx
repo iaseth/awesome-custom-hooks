@@ -9,7 +9,7 @@ export async function getStaticProps (context) {
 	const hook = hooks.find(hook => hook.name.toLowerCase() === params.hook.toLowerCase());
 
 	return {
-		props: {hook}
+		props: {hooks, hook}
 	};
 }
 
@@ -28,15 +28,12 @@ export async function getStaticPaths () {
 	};
 }
 
-export default function HookPage ({hook}) {
+export default function HookPage ({pageProps}) {
+	const {hook} = pageProps;
 
 	return (
 		<article>
-			<header className="min-h-screen bg-zinc-800 flex text-white px-4 py-20 text-center">
-				<Link className="m-auto" href="/">
-					<h2 className="text-4xl font-bold">{hook.name}</h2>
-				</Link>
-			</header>
+			<h4></h4>
 		</article>
 	);
 }
