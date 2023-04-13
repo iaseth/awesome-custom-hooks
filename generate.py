@@ -25,6 +25,8 @@ class CustomHook:
 	def __init__(self, entry):
 		self.entry = entry
 		self.name = entry.split("/")[-1]
+		self.capname = self.name[0].upper() + self.name[1:]
+		self.exampleComponentName = self.capname + "Example"
 		self.filename = self.name + ".ts"
 		self.path = f"{entry}.ts"
 		self.src_path = f"src/{entry}.ts"
@@ -34,6 +36,8 @@ class CustomHook:
 	def as_json_object(self):
 		jo = {}
 		jo["name"] = self.name
+		jo["capname"] = self.capname
+		jo["exampleComponentName"] = self.exampleComponentName
 		jo["entry"] = self.entry
 		jo["filename"] = self.filename
 
@@ -127,7 +131,7 @@ def generate_hooks_json(hooks):
 
 def create_examples(hooks):
 	for hook in hooks:
-		example_filepath = f"nextdocs/src/examples/{hook.entry}.tsx"
+		example_filepath = f"nextdocs/src/examples/{hook.entry}Example.tsx"
 		if os.path.isfile(example_filepath):
 			print(f"Exists: {example_filepath}")
 		else:
@@ -137,10 +141,19 @@ def create_examples(hooks):
 				print(f"Created: {dirname}")
 
 			text = f"import {{ {hook.name} }} from '../../../../dist';\n\n\n\n"
-			text += f"export function {hook.name} () {{\n\treturn <div>{hook.name}</div>\n}}\n"
+			text += f"export function {hook.exampleComponentName} () {{\n\treturn <div>{hook.exampleComponentName}</div>;\n}}\n"
 			with open(example_filepath, "w") as f:
 				f.write(text)
 			print(f"Created: {example_filepath}")
+
+	examples_indx_tsx_filepath = "nextdocs/src/examples/index.tsx"
+	examples_indx_tsx_filetext = ""
+	for hook in hooks:
+		examples_indx_tsx_filetext += f"export {{ {hook.exampleComponentName} }} from './{hook.entry}Example.tsx'\n"
+
+	with open(examples_indx_tsx_filepath, "w") as f:
+		f.write(examples_indx_tsx_filetext)
+	print(f"Saved: {examples_indx_tsx_filepath}")
 
 
 def main():

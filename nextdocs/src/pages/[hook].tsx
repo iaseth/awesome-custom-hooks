@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import fs from 'fs';
 
+import * as examples from '../examples';
+
 import {HooksJsonType, HookType} from './index';
 import hooksJson from '../../../hooks.min.json';
 const {hooks}: HooksJsonType = hooksJson;
@@ -64,10 +66,17 @@ function ShowFile ({file}: {file: any}) {
 
 export default function HookPage ({pageProps}: {pageProps: any}) {
 	const {hook, files} = pageProps;
+	const {exampleComponentName} = hook
+	const ExampleComponent = examples[exampleComponentName];
+	console.log(ExampleComponent);
 
 	return (
 		<article>
-			<h4></h4>
+			<header>
+				<section className="max-w-3xl mx-auto">
+					<ExampleComponent />
+				</section>
+			</header>
 			<main>
 				<section className="py-12 space-y-8">
 					<ShowFile file={files["srcPath"]} />
