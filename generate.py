@@ -125,6 +125,24 @@ def generate_hooks_json(hooks):
 		print(f"saved: {hooks_json_path}")
 
 
+def create_examples(hooks):
+	for hook in hooks:
+		example_filepath = f"nextdocs/src/examples/{hook.entry}.tsx"
+		if os.path.isfile(example_filepath):
+			print(f"Exists: {example_filepath}")
+		else:
+			dirname = os.path.dirname(example_filepath)
+			if not os.path.isdir(dirname):
+				os.mkdir(dirname)
+				print(f"Created: {dirname}")
+
+			text = f"import {{ {hook.name} }} from '../../../../dist';\n\n\n\n"
+			text += f"export function {hook.name} () {{\n\treturn <div>{hook.name}</div>\n}}\n"
+			with open(example_filepath, "w") as f:
+				f.write(text)
+			print(f"Created: {example_filepath}")
+
+
 def main():
 	hooks = get_hooks()
 
@@ -139,6 +157,8 @@ def main():
 		generate_index_ts(hooks)
 	elif command == "json":
 		generate_hooks_json(hooks)
+	elif command == "examples":
+		create_examples(hooks)
 	else:
 		print("No command provided.")
 
