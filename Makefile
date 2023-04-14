@@ -7,7 +7,7 @@ build:
 lint:
 	npm run lint
 
-prepare: create readme ts clean lint build json
+prepare: create readme ts clean build json
 
 publish: prepare
 	npm publish
