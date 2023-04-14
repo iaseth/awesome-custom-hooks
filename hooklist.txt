@@ -1,9 +1,9 @@
 
 dev/useStateLogger
 
-reactplus/useMount
-reactplus/useUnmount
-reactplus/useUpdate
+reactplus/useOnMount
+reactplus/useOnUnmount
+reactplus/useOnUpdate
 
 booleans/useBoolean
 booleans/useToggle
