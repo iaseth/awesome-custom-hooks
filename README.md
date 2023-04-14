@@ -1,5 +1,9 @@
 
 # awesome-custom-hooks
+* `useStateLogger`
+
+	- [src/dev/useStateLogger.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/dev/useStateLogger.ts)
+	- `return [x, setXSafe];`
 * `useBoolean`
 
 	- [src/booleans/useBoolean.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/booleans/useBoolean.ts)

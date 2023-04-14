@@ -1,3 +1,4 @@
+import { useStateLogger } from './dev/useStateLogger';
 import { useBoolean } from './booleans/useBoolean';
 import { useToggle } from './booleans/useToggle';
 import { useVisibility } from './booleans/useVisibility';
@@ -38,6 +39,7 @@ import { useSetTimeout } from './events/useSetTimeout';
 
 
 const Awesome = {
+	useStateLogger,
 	useBoolean,
 	useToggle,
 	useVisibility,

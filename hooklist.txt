@@ -1,4 +1,6 @@
 
+dev/useStateLogger
+
 booleans/useBoolean
 booleans/useToggle
 booleans/useVisibility
