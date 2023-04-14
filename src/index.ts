@@ -7,12 +7,12 @@ import { useToggle } from './booleans/useToggle';
 import { useVisibility } from './booleans/useVisibility';
 import { useHidden } from './booleans/useHidden';
 import { useCounter } from './numbers/useCounter';
+import { useDegree } from './numbers/useDegree';
 import { useDigit } from './numbers/useDigit';
-import { useNumber } from './numbers/useNumber';
 import { useInteger } from './numbers/useInteger';
+import { useNumber } from './numbers/useNumber';
 import { usePercent } from './numbers/usePercent';
 import { useRandom } from './numbers/useRandom';
-import { useDegree } from './numbers/useDegree';
 import { useTime } from './datetime/useTime';
 import { useDate } from './datetime/useDate';
 import { useDateTime } from './datetime/useDateTime';
@@ -34,6 +34,10 @@ import { useFetchXML } from './fetch/useFetchXML';
 import { useAddEventListener } from './events/useAddEventListener';
 import { useEvent } from './events/useEvent';
 import { useWindowEvent } from './events/useWindowEvent';
+import { useKeyDownEvent } from './events/useKeyDownEvent';
+import { useWheelEvent } from './events/useWheelEvent';
+import { useSetInterval } from './events/useSetInterval';
+import { useSetTimeout } from './events/useSetTimeout';
 import { useWindowSize } from './window/useWindowSize';
 import { useWindowHeight } from './window/useWindowHeight';
 import { useWindowWidth } from './window/useWindowWidth';
@@ -42,10 +46,6 @@ import { useHoverIn } from './mouse/useHoverIn';
 import { useHoverOut } from './mouse/useHoverOut';
 import { useClickIn } from './mouse/useClickIn';
 import { useClickOut } from './mouse/useClickOut';
-import { useKeyDownEvent } from './events/useKeyDownEvent';
-import { useWheelEvent } from './events/useWheelEvent';
-import { useSetInterval } from './events/useSetInterval';
-import { useSetTimeout } from './events/useSetTimeout';
 
 
 
@@ -59,12 +59,12 @@ const Awesome = {
 	useVisibility,
 	useHidden,
 	useCounter,
+	useDegree,
 	useDigit,
-	useNumber,
 	useInteger,
+	useNumber,
 	usePercent,
 	useRandom,
-	useDegree,
 	useTime,
 	useDate,
 	useDateTime,
@@ -86,6 +86,10 @@ const Awesome = {
 	useAddEventListener,
 	useEvent,
 	useWindowEvent,
+	useKeyDownEvent,
+	useWheelEvent,
+	useSetInterval,
+	useSetTimeout,
 	useWindowSize,
 	useWindowHeight,
 	useWindowWidth,
@@ -94,10 +98,6 @@ const Awesome = {
 	useHoverOut,
 	useClickIn,
 	useClickOut,
-	useKeyDownEvent,
-	useWheelEvent,
-	useSetInterval,
-	useSetTimeout,
 };
 
 export default Awesome;

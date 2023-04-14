@@ -11,12 +11,12 @@ booleans/useVisibility
 booleans/useHidden
 
 numbers/useCounter
+numbers/useDegree
 numbers/useDigit
-numbers/useNumber
 numbers/useInteger
+numbers/useNumber
 numbers/usePercent
 numbers/useRandom
-numbers/useDegree
 
 datetime/useTime
 datetime/useDate
@@ -50,6 +50,12 @@ events/useAddEventListener
 events/useEvent
 events/useWindowEvent
 
+events/useKeyDownEvent
+events/useWheelEvent
+
+events/useSetInterval
+events/useSetTimeout
+
 window/useWindowSize
 window/useWindowHeight
 window/useWindowWidth
@@ -59,9 +65,3 @@ mouse/useHoverIn
 mouse/useHoverOut
 mouse/useClickIn
 mouse/useClickOut
-
-events/useKeyDownEvent
-events/useWheelEvent
-
-events/useSetInterval
-events/useSetTimeout

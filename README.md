@@ -36,18 +36,22 @@
 
 	- [src/numbers/useCounter.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useCounter.ts)
 	- `return [count, incrementCount, decrementCount, resetCount];`
+* `useDegree`
+
+	- [src/numbers/useDegree.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useDegree.ts)
+	- `return [degree, setDegreeSafe];`
 * `useDigit`
 
 	- [src/numbers/useDigit.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useDigit.ts)
 	- `return [digit, setDigitSafe];`
-* `useNumber`
-
-	- [src/numbers/useNumber.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useNumber.ts)
-	- `return [number, setNumberSafe];`
 * `useInteger`
 
 	- [src/numbers/useInteger.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useInteger.ts)
 	- `return [integer, setIntegerSafe];`
+* `useNumber`
+
+	- [src/numbers/useNumber.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useNumber.ts)
+	- `return [number, setNumberSafe];`
 * `usePercent`
 
 	- [src/numbers/usePercent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/usePercent.ts)
@@ -56,10 +60,6 @@
 
 	- [src/numbers/useRandom.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useRandom.ts)
 	- `return 0;`
-* `useDegree`
-
-	- [src/numbers/useDegree.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/numbers/useDegree.ts)
-	- `return [degree, setDegreeSafe];`
 * `useTime`
 
 	- [src/datetime/useTime.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/datetime/useTime.ts)
@@ -144,6 +144,22 @@
 
 	- [src/events/useWindowEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWindowEvent.ts)
 	- `return 0;`
+* `useKeyDownEvent`
+
+	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)
+	- `return 0;`
+* `useWheelEvent`
+
+	- [src/events/useWheelEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWheelEvent.ts)
+	- `return 0;`
+* `useSetInterval`
+
+	- [src/events/useSetInterval.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetInterval.ts)
+	- `return 0;`
+* `useSetTimeout`
+
+	- [src/events/useSetTimeout.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetTimeout.ts)
+	- `return 0;`
 * `useWindowSize`
 
 	- [src/window/useWindowSize.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowSize.ts)
@@ -175,22 +191,6 @@
 * `useClickOut`
 
 	- [src/mouse/useClickOut.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useClickOut.ts)
-	- `return 0;`
-* `useKeyDownEvent`
-
-	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)
-	- `return 0;`
-* `useWheelEvent`
-
-	- [src/events/useWheelEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWheelEvent.ts)
-	- `return 0;`
-* `useSetInterval`
-
-	- [src/events/useSetInterval.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetInterval.ts)
-	- `return 0;`
-* `useSetTimeout`
-
-	- [src/events/useSetTimeout.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useSetTimeout.ts)
 	- `return 0;`
 
 
