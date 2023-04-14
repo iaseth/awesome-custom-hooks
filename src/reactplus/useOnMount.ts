@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-export const useOnMount = (func: Function) => {
+export const useOnMount = (callback: any) => {
 	React.useEffect(() => {
-		func();
+		callback();
 	}, []);
 
 	return 0;

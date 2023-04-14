@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useHoverOut = (elementRef: any, callback: Function) => {
+export const useHoverOut = (elementRef: any, callback: any) => {
 	React.useEffect(() => {
 		function handleHoverOut (event: any) {
 			event.preventDefault();

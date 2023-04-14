@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useClickIn = (elementRef: any, callback: Function) => {
+export const useClickIn = (elementRef: any, callback: any) => {
 	React.useEffect(() => {
 		function handleClickIn (event: any) {
 			event.preventDefault();

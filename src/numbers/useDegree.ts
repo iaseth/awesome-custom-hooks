@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-const MAX_DEGREE: number = 359;
+const MAX_DEGREE = 359;
 
-export const useDegree = (intialState: number = 0) => {
+export const useDegree = (intialState = 0) => {
 	const [degree, setDegree] = React.useState(intialState);
 
 	const setDegreeSafe = (pc: number) => {

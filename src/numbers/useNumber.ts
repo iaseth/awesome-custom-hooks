@@ -3,8 +3,8 @@ import React from 'react';
 
 
 export const useNumber = (
-	intialState: number = 0,
-	max: number = 100
+	intialState = 0,
+	max = 100
 ) => {
 	const [number, setNumber] = React.useState(intialState);
 

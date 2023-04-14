@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useHoverIn = (elementRef: any, callback: Function) => {
+export const useHoverIn = (elementRef: any, callback: any) => {
 	React.useEffect(() => {
 		function handleHoverIn (event: any) {
 			event.preventDefault();

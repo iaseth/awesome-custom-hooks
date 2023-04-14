@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useClickOut = (elementRef: any, callback: Function) => {
+export const useClickOut = (elementRef: any, callback: any) => {
 	React.useEffect(() => {
 		function handleClickOut (event: any) {
 			event.preventDefault();

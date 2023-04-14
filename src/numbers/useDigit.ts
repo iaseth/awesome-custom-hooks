@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useDigit = (intialState: number=0) => {
+export const useDigit = (intialState = 0) => {
 	const [digit, setDigit] = React.useState(intialState);
 
 	const setDigitSafe = (d: number) => {

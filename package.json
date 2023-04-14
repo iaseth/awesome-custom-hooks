@@ -1,12 +1,13 @@
 {
   "name": "awesome-custom-hooks",
-  "version": "0.7.18",
+  "version": "0.7.19",
   "description": "Awesome custom React Hooks that I frequently use.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [
     "react",
@@ -22,6 +23,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.33"
+    "@types/react": "^18.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0"
   }
 }

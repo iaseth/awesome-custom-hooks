@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-export const useOnUpdate = (func: Function) => {
+export const useOnUpdate = (callback: any) => {
 	React.useEffect(() => {
-		func();
+		callback();
 	});
 
 	return 0;

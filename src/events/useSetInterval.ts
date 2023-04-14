@@ -3,12 +3,12 @@ import React from 'react';
 
 
 export const useSetInterval = (
-	func: Function,
+	callback: any,
 	dependencies: any[] = [],
-	duration: number=1000
+	duration = 1000
 ) => {
 	React.useEffect(() => {
-		const intervalId = setInterval(func, duration);
+		const intervalId = setInterval(callback, duration);
 		return () => clearInterval(intervalId);
 	}, dependencies);
 	return 0;

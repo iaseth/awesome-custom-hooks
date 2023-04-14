@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useBoolean = (intialState: boolean=false) => {
+export const useBoolean = (intialState = false) => {
 	const [x, setX] = React.useState(intialState);
 
 	const setXSafe = (x: boolean) => {
