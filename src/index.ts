@@ -37,7 +37,11 @@ import { useWindowEvent } from './events/useWindowEvent';
 import { useWindowSize } from './window/useWindowSize';
 import { useWindowHeight } from './window/useWindowHeight';
 import { useWindowWidth } from './window/useWindowWidth';
-import { useMousePosition } from './window/useMousePosition';
+import { useMousePosition } from './mouse/useMousePosition';
+import { useHoverIn } from './mouse/useHoverIn';
+import { useHoverOut } from './mouse/useHoverOut';
+import { useClickIn } from './mouse/useClickIn';
+import { useClickOut } from './mouse/useClickOut';
 import { useKeyDownEvent } from './events/useKeyDownEvent';
 import { useWheelEvent } from './events/useWheelEvent';
 import { useSetInterval } from './events/useSetInterval';
@@ -86,6 +90,10 @@ const Awesome = {
 	useWindowHeight,
 	useWindowWidth,
 	useMousePosition,
+	useHoverIn,
+	useHoverOut,
+	useClickIn,
+	useClickOut,
 	useKeyDownEvent,
 	useWheelEvent,
 	useSetInterval,
