@@ -46,6 +46,10 @@ events/useAddEventListener
 events/useEvent
 events/useWindowEvent
 
+window/useWindowSize
+window/useWindowHeight
+window/useWindowWidth
+
 events/useKeyDownEvent
 events/useWheelEvent
 

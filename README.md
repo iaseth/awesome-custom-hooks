@@ -132,6 +132,18 @@
 
 	- [src/events/useWindowEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useWindowEvent.ts)
 	- `return 0;`
+* `useWindowSize`
+
+	- [src/window/useWindowSize.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowSize.ts)
+	- `return [windowSize];`
+* `useWindowHeight`
+
+	- [src/window/useWindowHeight.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowHeight.ts)
+	- `return [windowHeight];`
+* `useWindowWidth`
+
+	- [src/window/useWindowWidth.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowWidth.ts)
+	- `return [windowWidth];`
 * `useKeyDownEvent`
 
 	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)
