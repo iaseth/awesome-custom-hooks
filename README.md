@@ -156,6 +156,10 @@
 
 	- [src/window/useWindowWidth.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowWidth.ts)
 	- `return [windowWidth];`
+* `useMousePosition`
+
+	- [src/window/useMousePosition.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useMousePosition.ts)
+	- `return [x, y];`
 * `useKeyDownEvent`
 
 	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)

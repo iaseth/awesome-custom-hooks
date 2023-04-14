@@ -53,6 +53,7 @@ events/useWindowEvent
 window/useWindowSize
 window/useWindowHeight
 window/useWindowWidth
+window/useMousePosition
 
 events/useKeyDownEvent
 events/useWheelEvent
