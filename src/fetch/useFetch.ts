@@ -2,6 +2,14 @@ import React from 'react';
 
 
 
-export const useFetch = () => {
-	return 0;
+export const useFetch = (url: string) => {
+	const [data, setData] = React.useState<string | null>(null);
+
+	React.useEffect(() => {
+		fetch(url)
+			.then(res => res.text())
+			.then(res => setData(res));
+	}, [url]);
+
+	return [data];
 };

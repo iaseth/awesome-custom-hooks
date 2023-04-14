@@ -111,15 +111,15 @@
 * `useFetch`
 
 	- [src/fetch/useFetch.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/fetch/useFetch.ts)
-	- `return 0;`
+	- `return [data];`
 * `useFetchJSON`
 
 	- [src/fetch/useFetchJSON.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/fetch/useFetchJSON.ts)
-	- `return 0;`
+	- `return [data];`
 * `useFetchXML`
 
 	- [src/fetch/useFetchXML.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/fetch/useFetchXML.ts)
-	- `return 0;`
+	- `return [doc];`
 * `useAddEventListener`
 
 	- [src/events/useAddEventListener.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useAddEventListener.ts)
