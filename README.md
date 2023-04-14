@@ -4,6 +4,18 @@
 
 	- [src/dev/useStateLogger.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/dev/useStateLogger.ts)
 	- `return [x, setXSafe];`
+* `useMount`
+
+	- [src/reactplus/useMount.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/reactplus/useMount.ts)
+	- `return 0;`
+* `useUnmount`
+
+	- [src/reactplus/useUnmount.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/reactplus/useUnmount.ts)
+	- `return 0;`
+* `useUpdate`
+
+	- [src/reactplus/useUpdate.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/reactplus/useUpdate.ts)
+	- `return 0;`
 * `useBoolean`
 
 	- [src/booleans/useBoolean.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/booleans/useBoolean.ts)
