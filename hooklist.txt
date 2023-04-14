@@ -1,6 +1,10 @@
 
 dev/useStateLogger
 
+reactplus/useMount
+reactplus/useUnmount
+reactplus/useUpdate
+
 booleans/useBoolean
 booleans/useToggle
 booleans/useVisibility

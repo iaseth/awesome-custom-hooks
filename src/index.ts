@@ -1,4 +1,7 @@
 import { useStateLogger } from './dev/useStateLogger';
+import { useMount } from './reactplus/useMount';
+import { useUnmount } from './reactplus/useUnmount';
+import { useUpdate } from './reactplus/useUpdate';
 import { useBoolean } from './booleans/useBoolean';
 import { useToggle } from './booleans/useToggle';
 import { useVisibility } from './booleans/useVisibility';
@@ -43,6 +46,9 @@ import { useSetTimeout } from './events/useSetTimeout';
 
 const Awesome = {
 	useStateLogger,
+	useMount,
+	useUnmount,
+	useUpdate,
 	useBoolean,
 	useToggle,
 	useVisibility,

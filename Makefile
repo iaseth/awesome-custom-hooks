@@ -4,7 +4,9 @@ default: build
 build:
 	npm run build
 
-publish: readme ts clean build
+prepare: create readme ts clean build json
+
+publish: prepare
 	npm publish
 
 readme:
