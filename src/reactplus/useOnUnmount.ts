@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-export const useOnUnmount = (func: (() => void)) => {
+export const useOnUnmount = (callback: (() => void)) => {
 	React.useEffect((): (() => void) => {
-		return func;
+		return callback;
 	}, []);
 
 	return 0;

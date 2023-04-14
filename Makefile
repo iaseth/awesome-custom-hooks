@@ -4,7 +4,10 @@ default: build
 build:
 	npm run build
 
-prepare: create readme ts clean build json
+lint:
+	npm run lint
+
+prepare: create readme ts clean lint build json
 
 publish: prepare
 	npm publish

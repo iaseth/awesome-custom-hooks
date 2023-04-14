@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const useCounter = (intialState: number=0) => {
+export const useCounter = (intialState = 0) => {
 	const [count, setCount] = React.useState(intialState);
 
 	const incrementCount = () => setCount((x: number) => x+1);

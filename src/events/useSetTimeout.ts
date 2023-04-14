@@ -3,12 +3,12 @@ import React from 'react';
 
 
 export const useSetTimeout = (
-	func: Function,
+	callback: any,
 	dependencies: any[] = [],
-	timeout: number=1000
+	timeout = 1000
 ) => {
 	React.useEffect(() => {
-		const timeoutId = setTimeout(func, timeout);
+		const timeoutId = setTimeout(callback, timeout);
 		return () => clearTimeout(timeoutId);
 	}, dependencies);
 	return 0;

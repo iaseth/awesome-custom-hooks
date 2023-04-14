@@ -156,6 +156,26 @@
 
 	- [src/window/useWindowWidth.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/window/useWindowWidth.ts)
 	- `return [windowWidth];`
+* `useMousePosition`
+
+	- [src/mouse/useMousePosition.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useMousePosition.ts)
+	- `return [x, y];`
+* `useHoverIn`
+
+	- [src/mouse/useHoverIn.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useHoverIn.ts)
+	- `return 0;`
+* `useHoverOut`
+
+	- [src/mouse/useHoverOut.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useHoverOut.ts)
+	- `return 0;`
+* `useClickIn`
+
+	- [src/mouse/useClickIn.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useClickIn.ts)
+	- `return 0;`
+* `useClickOut`
+
+	- [src/mouse/useClickOut.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/mouse/useClickOut.ts)
+	- `return 0;`
 * `useKeyDownEvent`
 
 	- [src/events/useKeyDownEvent.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/events/useKeyDownEvent.ts)

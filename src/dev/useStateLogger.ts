@@ -4,7 +4,7 @@ import React from 'react';
 
 export const useStateLogger = (
 	intialState: any,
-	label: string = "State"
+	label = "State"
 ) => {
 	const [x, setX] = React.useState(intialState);
 	const setXSafe = (v: any) => {
