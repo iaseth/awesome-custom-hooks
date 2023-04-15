@@ -1,4 +1,4 @@
-import { useWindowWidth } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

@@ -1,4 +1,4 @@
-import { useString } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

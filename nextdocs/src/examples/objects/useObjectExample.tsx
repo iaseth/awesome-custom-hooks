@@ -1,4 +1,4 @@
-import { useObject } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

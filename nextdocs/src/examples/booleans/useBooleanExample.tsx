@@ -1,4 +1,4 @@
-import { useBoolean } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

@@ -1,4 +1,4 @@
-import { useWindowSize } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

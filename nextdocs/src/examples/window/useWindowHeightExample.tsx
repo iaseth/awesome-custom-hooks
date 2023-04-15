@@ -1,4 +1,4 @@
-import { useWindowHeight } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

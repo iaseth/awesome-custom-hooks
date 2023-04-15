@@ -1,4 +1,4 @@
-import { useOnMount } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

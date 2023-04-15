@@ -1,4 +1,4 @@
-import { useKeyDownEvent } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

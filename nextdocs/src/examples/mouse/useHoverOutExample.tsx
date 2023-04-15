@@ -1,4 +1,4 @@
-import { useHoverOut } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

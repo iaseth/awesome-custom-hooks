@@ -1,4 +1,4 @@
-import { useNumber } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

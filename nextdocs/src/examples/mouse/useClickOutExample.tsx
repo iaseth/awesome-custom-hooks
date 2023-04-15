@@ -1,4 +1,4 @@
-import { useClickOut } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

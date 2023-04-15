@@ -1,4 +1,4 @@
-import { useClickIn } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

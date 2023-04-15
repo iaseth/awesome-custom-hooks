@@ -1,4 +1,4 @@
-import { useDigit } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

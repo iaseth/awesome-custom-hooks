@@ -1,4 +1,4 @@
-import { useOnUnmount } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

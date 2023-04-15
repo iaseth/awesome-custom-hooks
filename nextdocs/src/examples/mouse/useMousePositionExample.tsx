@@ -1,4 +1,4 @@
-import { useMousePosition } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

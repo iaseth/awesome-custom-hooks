@@ -1,4 +1,4 @@
-import { useDayOfMonth } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

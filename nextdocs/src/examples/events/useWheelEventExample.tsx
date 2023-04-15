@@ -1,4 +1,4 @@
-import { useWheelEvent } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

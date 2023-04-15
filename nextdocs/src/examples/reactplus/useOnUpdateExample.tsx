@@ -1,4 +1,4 @@
-import { useOnUpdate } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

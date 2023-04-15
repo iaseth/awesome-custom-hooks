@@ -83,7 +83,7 @@ def create_examples(hooks):
 				os.mkdir(dirname)
 				print(f"Created: {dirname}")
 
-			text = f"import {{ {hook.name} }} from '../../../../dist';\n\n\n\n"
+			text = f"import Awesome from '../../../../dist';\n\n\n\n"
 			text += f"export function {hook.exampleComponentName} () {{\n\treturn <div>{hook.exampleComponentName}</div>;\n}}\n"
 			with open(example_filepath, "w") as f:
 				f.write(text)

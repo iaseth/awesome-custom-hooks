@@ -1,4 +1,4 @@
-import { usePercent } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

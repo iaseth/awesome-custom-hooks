@@ -1,4 +1,4 @@
-import { useSetTimeout } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 
