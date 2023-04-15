@@ -1,4 +1,4 @@
-import { useAddEventListener } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

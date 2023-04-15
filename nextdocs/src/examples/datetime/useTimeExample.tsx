@@ -1,4 +1,4 @@
-import { useTime } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

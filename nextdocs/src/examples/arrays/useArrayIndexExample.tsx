@@ -1,4 +1,4 @@
-import { useArrayIndex } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

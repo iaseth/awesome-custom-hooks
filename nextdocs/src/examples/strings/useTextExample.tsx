@@ -1,4 +1,4 @@
-import { useText } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

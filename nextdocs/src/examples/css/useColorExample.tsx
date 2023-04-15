@@ -1,4 +1,4 @@
-import { useColor } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

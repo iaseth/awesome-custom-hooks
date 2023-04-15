@@ -21,8 +21,14 @@ ts:
 create:
 	python generate.py create
 
+prod:
+	python generate.py prod
+
 json:
 	python generate.py json
+
+examples:
+	python generate.py examples
 
 clean:
 	@rm -rf dist

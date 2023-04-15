@@ -1,4 +1,4 @@
-import { useYear } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

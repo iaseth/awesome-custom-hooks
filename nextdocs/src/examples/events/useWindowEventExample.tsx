@@ -1,4 +1,4 @@
-import { useWindowEvent } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

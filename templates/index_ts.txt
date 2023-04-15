@@ -1,0 +1,15 @@
+{% for hook in hooks %}
+import { {{ hook.name }} } from './{{ hook.prod_src_path[4:-3] }}';
+import { {{ hook.debugName }} } from './{{ hook.dev_src_path[4:-3] }}';
+{% endfor %}
+
+
+const Awesome = {
+{% for hook in hooks %}
+	{{ hook.name }},
+	{{ hook.debugName }},
+{% endfor %}
+};
+
+export default Awesome;
+

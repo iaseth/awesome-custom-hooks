@@ -11,6 +11,7 @@ export const useStateLoggerDebug = (
 		console.log(`Updated '${label}': ${x} => ${v}`);
 		setX(v);
 	};
+	// DEBUG: this line will not be part of the prod hook
 
 	return [x, setXSafe];
 };

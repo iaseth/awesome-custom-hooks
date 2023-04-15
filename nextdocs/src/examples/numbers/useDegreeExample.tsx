@@ -1,4 +1,4 @@
-import { useDegree } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 

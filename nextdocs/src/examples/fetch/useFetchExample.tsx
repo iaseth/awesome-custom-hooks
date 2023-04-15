@@ -1,4 +1,4 @@
-import { useFetch } from '../../../../dist';
+import Awesome from '../../../../dist';
 
 
 
