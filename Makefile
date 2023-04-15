@@ -21,6 +21,9 @@ ts:
 create:
 	python generate.py create
 
+prod:
+	python generate.py prod
+
 json:
 	python generate.py json
 

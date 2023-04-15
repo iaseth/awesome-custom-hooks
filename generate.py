@@ -31,9 +31,14 @@ def generate_readme(hooks):
 		print(f"saved: README.md")
 
 
-def create_modules(hooks):
+def create_dev_modules(hooks):
 	for hook in hooks:
-		hook.create_modules()
+		hook.create_dev_module()
+
+
+def generate_prod_hooks(hooks):
+	for hook in hooks:
+		hook.generate_prod_hook()
 
 
 def generate_index_ts(hooks):
@@ -103,7 +108,9 @@ def main():
 	if command == "readme":
 		generate_readme(hooks)
 	elif command == "create":
-		create_modules(hooks)
+		create_dev_modules(hooks)
+	elif command == "prod":
+		generate_prod_hooks(hooks)
 	elif command == "ts":
 		generate_index_ts(hooks)
 	elif command == "json":

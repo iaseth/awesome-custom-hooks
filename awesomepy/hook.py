@@ -1,3 +1,5 @@
+import os
+
 from .utils import get_file_info_as_json
 
 
@@ -53,14 +55,29 @@ class CustomHook:
 		return return_statements[-1] if len(return_statements) > 0 else "Not found"
 
 
-	def create_modules(self):
-		filepath = self.prod_src_path
+	def create_dev_module(self):
+		filepath = self.dev_src_path
 		if os.path.isfile(filepath):
-			print(f"Exists: {filepath}")
+			print(f"\texists: {filepath}")
 		else:
 			with open(filepath, "w") as f:
 				f.write("")
-			print(f"Created: {filepath}")
+			print(f"\tcreated: {filepath}")
+
+
+	def generate_prod_hook(self):
+		dev_src = open(self.dev_src_path).read()
+		dev_src_lines = dev_src.split("\n")
+
+		# skip all lines that contain the DEBUG keyword
+		prod_src_lines = [x for x in dev_src_lines if not "DEBUG" in x]
+		# replace useFooDebug with useFoo
+		prod_src_lines = [x.replace(self.debugName, self.name) for x in prod_src_lines]
+		prod_src = "\n".join(prod_src_lines)
+
+		with open(self.prod_src_path, "w") as f:
+			f.write(prod_src)
+		print(f"\tsaved: {self.prod_src_path}")
 
 
 	def __str__(self):
