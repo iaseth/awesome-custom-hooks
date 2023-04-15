@@ -3,6 +3,7 @@ import Link from 'next/link';
 import fs from 'fs';
 
 import * as examples from '../examples';
+const Examples: Record<string, any> = examples;
 
 import {HooksJsonType, HookType} from './index';
 import hooksJson from '../../../hooks.min.json';
@@ -67,14 +68,14 @@ function ShowFile ({file}: {file: any}) {
 
 export default function HookPage ({pageProps}: {pageProps: any}) {
 	const {hook, files} = pageProps;
-	const {exampleComponentName} = hook;
-	// const ExampleComponent = examples[exampleComponentName];
+	const exampleComponentName = hook.exampleComponentName;
+	const ExampleComponent = Examples[exampleComponentName];
 
 	return (
 		<article>
 			<header>
 				<section className="max-w-3xl mx-auto">
-					{/*<ExampleComponent />*/}
+					<ExampleComponent />
 				</section>
 			</header>
 			<main>

@@ -21,6 +21,8 @@ export interface HookType {
 	entry: string,
 	filename: string,
 	name: string,
+	capname: string,
+	exampleComponentName: string,
 	returnStatement: string,
 
 	devDtsPath: string,
