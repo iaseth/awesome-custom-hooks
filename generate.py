@@ -2,6 +2,9 @@ import json
 import os
 import sys
 
+import jinja2
+jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(os.path.abspath('./templates/')))
+
 from awesomepy import CustomHook
 from awesomepy import get_file_info_as_json
 
@@ -42,19 +45,8 @@ def generate_prod_hooks(hooks):
 
 
 def generate_index_ts(hooks):
-	text = ""
-	for hook in hooks:
-		text += f"import {{ {hook.name} }} from './prod/{hook.entry}';\n"
-		text += f"import {{ {hook.debugName} }} from './dev/{hook.entry}Debug';\n"
-
-	text += "\n\n\n"
-	text += "const Awesome = {\n"
-	for hook in hooks:
-		text += f"\t{hook.name},\n"
-		text += f"\t{hook.debugName},\n"
-
-	text += "};\n\n"
-	text += "export default Awesome;\n"
+	index_ts_template = jinja_env.get_template("index_ts.txt")
+	text = index_ts_template.render(hooks=hooks)
 
 	INDEX_TS_PATH = "src/index.ts"
 	with open(INDEX_TS_PATH, "w") as f:
