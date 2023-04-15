@@ -32,7 +32,7 @@ class CustomHook:
 		self.filename = self.name + ".ts"
 		self.path = f"{entry}.ts"
 		self.prod_src_path = f"src/prod/{entry}.ts"
-		self.dev_src_path = f"src/dev/{entry}.ts"
+		self.dev_src_path = f"src/dev/{entry}Debug.ts"
 
 		self.prod_js_path = f"dist/prod/{entry}.js"
 		self.dev_js_path = f"dist/dev/{entry}Debug.js"
