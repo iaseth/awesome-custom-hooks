@@ -19,19 +19,12 @@ def get_hooks():
 
 
 def generate_readme(hooks):
-	HOOK_LIST_MD = ""
-	for hook in hooks:
-		HOOK_LIST_MD += f"* `{hook.name}`\n\n"
-		HOOK_LIST_MD += f"\t- [{hook.prod_src_path}](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/prod/{hook.entry}.ts)\n"
-		HOOK_LIST_MD += f"\t- [{hook.dev_src_path}](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/dev/{hook.entry}Debug.ts)\n"
-		HOOK_LIST_MD += f"\t- `{hook.get_return_statement()}`"
-		HOOK_LIST_MD += "\n"
+	index_ts_template = jinja_env.get_template("readme_md.txt")
+	readme_text = index_ts_template.render(hooks=hooks)
 
-	preadme_text = open("PREADME.md").read()
-	readme_text = preadme_text.replace("[[HOOK_LIST_MD]]", HOOK_LIST_MD)
 	with open("README.md", "w") as f:
 		f.write(readme_text)
-		print(f"saved: README.md")
+	print(f"saved: README.md")
 
 
 def create_dev_modules(hooks):
