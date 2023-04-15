@@ -24,5 +24,8 @@ create:
 json:
 	python generate.py json
 
+examples:
+	python generate.py examples
+
 clean:
 	@rm -rf dist
