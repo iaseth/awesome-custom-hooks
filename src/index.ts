@@ -143,6 +143,9 @@ import { useClickInDebug } from './dev/mouse/useClickInDebug';
 import { useClickOut } from './prod/mouse/useClickOut';
 import { useClickOutDebug } from './dev/mouse/useClickOutDebug';
 
+import { useArrowKeyPress } from './prod/keyboard/useArrowKeyPress';
+import { useArrowKeyPressDebug } from './dev/keyboard/useArrowKeyPressDebug';
+
 
 
 const Awesome = {
@@ -290,6 +293,9 @@ const Awesome = {
 
 	useClickOut,
 	useClickOutDebug,
+
+	useArrowKeyPress,
+	useArrowKeyPressDebug,
 
 };
 

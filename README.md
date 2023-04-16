@@ -289,3 +289,9 @@
 	- [src/prod/mouse/useClickOut.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/prod/mouse/useClickOut.ts)
 	- [src/dev/mouse/useClickOutDebug.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/dev/mouse/useClickOutDebug.ts)
 	- `return 0;`
+
+* [`useArrowKeyPress`](https://awesome-custom-hooks.netlify.app/useArrowKeyPress)
+
+	- [src/prod/keyboard/useArrowKeyPress.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/prod/keyboard/useArrowKeyPress.ts)
+	- [src/dev/keyboard/useArrowKeyPressDebug.ts](https://github.com/iaseth/awesome-custom-hooks/blob/master/src/dev/keyboard/useArrowKeyPressDebug.ts)
+	- `return 0;`

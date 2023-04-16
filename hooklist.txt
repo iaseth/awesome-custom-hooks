@@ -65,3 +65,5 @@ mouse/useHoverIn
 mouse/useHoverOut
 mouse/useClickIn
 mouse/useClickOut
+
+keyboard/useArrowKeyPress
