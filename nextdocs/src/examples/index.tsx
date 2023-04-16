@@ -46,3 +46,4 @@ export { UseHoverInExample } from './mouse/useHoverInExample';
 export { UseHoverOutExample } from './mouse/useHoverOutExample';
 export { UseClickInExample } from './mouse/useClickInExample';
 export { UseClickOutExample } from './mouse/useClickOutExample';
+export { UseArrowKeyPressExample } from './keyboard/useArrowKeyPressExample';
