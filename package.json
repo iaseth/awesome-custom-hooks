@@ -1,6 +1,6 @@
 {
   "name": "awesome-custom-hooks",
-  "version": "0.7.22",
+  "version": "0.7.23",
   "description": "Awesome custom React Hooks that I frequently use.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

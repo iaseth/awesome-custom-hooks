@@ -1,6 +1,9 @@
 
-src/
+awesomepy/
 nextdocs/
+src/
+temp/
+templates/
 
 generate.py
 hooklist.txt
