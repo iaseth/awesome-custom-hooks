@@ -10,6 +10,7 @@ export const useMousePositionDebug = () => {
 		function updatePosition (e: any) {
 			setX(e.clientX);
 			setY(e.clientY);
+			console.log(`Updated mouse position: (${x}, ${y})`); // DEBUG
 		}
 
 		window.addEventListener("mousemove", updatePosition);

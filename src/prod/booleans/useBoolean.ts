@@ -13,6 +13,8 @@ export const useBoolean = (intialState = false) => {
 		}
 	};
 
-	const toggleX = () => setX((x: boolean) => !x);
+	const toggleX = () => {
+		setX((x: boolean) => !x);
+	};
 	return [x, setXSafe, toggleX];
 };

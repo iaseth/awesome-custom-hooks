@@ -60,6 +60,11 @@ class CustomHook:
 		if os.path.isfile(filepath):
 			print(f"\texists: {filepath}")
 		else:
+			dirname = os.path.dirname(filepath)
+			if not os.path.isdir(dirname):
+				os.mkdir(dirname)
+				print(f"\tcreated: {dirname}")
+
 			with open(filepath, "w") as f:
 				f.write("")
 			print(f"\tcreated: {filepath}")
@@ -74,6 +79,11 @@ class CustomHook:
 		# replace useFooDebug with useFoo
 		prod_src_lines = [x.replace(self.debugName, self.name) for x in prod_src_lines]
 		prod_src = "\n".join(prod_src_lines)
+
+		dirname = os.path.dirname(self.prod_src_path)
+		if not os.path.isdir(dirname):
+			os.mkdir(dirname)
+			print(f"\tcreated: {dirname}")
 
 		with open(self.prod_src_path, "w") as f:
 			f.write(prod_src)

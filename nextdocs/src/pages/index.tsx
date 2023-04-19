@@ -6,7 +6,7 @@ const {hooks}: HooksJsonType = hooksJson;
 
 export interface HooksJsonType {
 	hooks: HookType[]
-};
+}
 
 export interface FileInfoType {
 	emptyLinesCount: number,
@@ -15,23 +15,28 @@ export interface FileInfoType {
 	linesCount: number,
 	returnsCount: number,
 	path: string
-};
+}
 
 export interface HookType {
 	entry: string,
 	filename: string,
 	name: string,
+	capname: string,
+	exampleComponentName: string,
 	returnStatement: string,
 
+	devDtsPath: string,
+	devJsPath: string,
+	devSrcPath: string,
+
+	prodDtsPath: string,
+	prodJsPath: string,
+	prodSrcPath: string,
+
 	dtsFileInfo: FileInfoType,
-	dtsPath: string,
-
 	jsFileInfo: FileInfoType,
-	jsPath: string,
-
 	srcFileInfo: FileInfoType,
-	srcPath: string,
-};
+}
 
 
 export async function getStaticProps (context: any) {

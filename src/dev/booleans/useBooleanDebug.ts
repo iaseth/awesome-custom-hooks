@@ -13,6 +13,9 @@ export const useBooleanDebug = (intialState = false) => {
 		}
 	};
 
-	const toggleX = () => setX((x: boolean) => !x);
+	const toggleX = () => {
+		setX((x: boolean) => !x);
+		console.log(`Toggled '${!x}' => '${x}'`); // DEBUG
+	};
 	return [x, setXSafe, toggleX];
 };

@@ -77,7 +77,7 @@ def create_examples(hooks):
 	examples_index_tsx_filepath = "nextdocs/src/examples/index.tsx"
 	examples_index_tsx_filetext = ""
 	for hook in hooks:
-		examples_index_tsx_filetext += f"export {{ {hook.exampleComponentName} }} from './{hook.entry}Example.tsx'\n"
+		examples_index_tsx_filetext += f"export {{ {hook.exampleComponentName} }} from './{hook.entry}Example';\n"
 
 	with open(examples_index_tsx_filepath, "w") as f:
 		f.write(examples_index_tsx_filetext)
